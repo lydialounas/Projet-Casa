@@ -1,0 +1,13 @@
+.accueil {
+  padding: 40px 20px;
+  max-width: 100%px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .accueil {
+    padding: 20px 10px;
+  }
+}

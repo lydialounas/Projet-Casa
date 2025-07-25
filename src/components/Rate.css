@@ -1,0 +1,29 @@
+.rate {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.star {
+  font-size: 24px;
+}
+
+.red {
+  color: #ff6060;
+}
+
+.grey {
+  color: #e3e3e3;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .rate {
+    justify-content: flex-start;
+  }
+
+  .star {
+    font-size: 20px;
+  }
+}

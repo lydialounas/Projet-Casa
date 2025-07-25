@@ -1,0 +1,29 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tag {
+  background-color: #ff6060; /* rouge comme Figma */
+  color: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .tag {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .tags {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+}
