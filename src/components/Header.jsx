@@ -1,5 +1,7 @@
 import { Link, useLocation } from "react-router-dom"
-
+import React from "react";
+import "./Header.css";  
+ import logo from "../assets/logo.png"
 export default function Header() {
   const location = useLocation()
   const activeLink = location.pathname
@@ -21,4 +23,3 @@ export default function Header() {
     </header>
   )
 }
-import logo from "../assets/logo.png"

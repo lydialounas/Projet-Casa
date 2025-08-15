@@ -1,9 +1,9 @@
-
+// src/components/Banner.jsx
 import React from "react";
-import "../components/Banner.css";
+import "./Banner.css";
+import defaultBanner from "../assets/Image.png";
 
-
-export default function Banner({ image, text }) {
+export default function Banner({ image = defaultBanner, text }) {
   return (
     <div
       className="banner"
@@ -17,4 +17,3 @@ export default function Banner({ image, text }) {
     </div>
   );
 }
-import "../components/Banner.css";

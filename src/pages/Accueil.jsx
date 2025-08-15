@@ -1,14 +1,17 @@
+// src/pages/Accueil.jsx
+import React from "react";
 import Banner from "../components/Banner";
-import GalleryCards from "../components/GalleryCards";
 import "./Accueil.css";
+import GalleryCards from "../components/GalleryCards";
+import Footer from "../components/Footer";
 
 function Accueil() {
   return (
-    <div className="accueil">
-      <Banner />
+    <>
+      <Banner text="Chez vous, partout et ailleurs" />
       <GalleryCards />
-    </div>
+      <Footer />
+    </>
   );
 }
-
 export default Accueil;

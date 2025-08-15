@@ -8,6 +8,7 @@
   border-radius: 25px;
 }
 
+/* CARD — même dimensions, plus de gradient */
 .card {
   position: relative;
   width: 300px;
@@ -16,7 +17,8 @@
   overflow: hidden;
   text-decoration: none;
   color: white;
-  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+  /* SUPPRIMER l'effet : */
+  background: none;                 /* <-- plus de linear-gradient */
   display: flex;
   align-items: flex-end;
   padding: 20px;
@@ -25,22 +27,26 @@
   transition: transform 0.3s;
 }
 
-.card:hover {
-  transform: scale(1.03);
-}
-
+/* IMAGE — visible au premier plan, couvre toute la card */
 .card-image {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;                         /* top:0; right:0; bottom:0; left:0 */
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: 0;                       /* <-- au lieu de -1 */
   transition: opacity 0.3s;
 }
 
-/* 🌐 Responsive pour les petits écrans */
+/* (Optionnel) lisibilité du titre sans teinter la photo */
+.card h3 {
+  z-index: 10;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+
+/* 🌐 Responsive pour les petits écrans : inchangé */
 @media (max-width: 768px) {
   .card {
     width: 100%;

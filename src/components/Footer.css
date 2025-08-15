@@ -1,0 +1,23 @@
+/* src/components/Footer.css */
+.footer {
+  margin-top: 3rem;
+  padding: 2.5rem 1rem;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column; /* met en colonne */
+  align-items: center;    /* centre horizontalement */
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+  text-align: center;     /* centre le texte */
+}
+
+.footer-logo {
+  height: 40px;      /* taille du logo */
+  margin-bottom: 10px; /* espace sous le logo */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
