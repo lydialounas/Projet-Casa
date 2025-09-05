@@ -10,6 +10,7 @@ export default function Collapse({ title, content }) {
     <div className="collapse">
       <div
         className="collapse-title"
+        data-testid="collapse-title"
         onClick={toggle}
         role="button"
         tabIndex={0}

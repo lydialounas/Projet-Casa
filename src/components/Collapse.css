@@ -9,7 +9,7 @@
   flex: 1 1 0;
   min-width: 0;
 }
-/* s'il y a un div vide qui se glisse entre les deux, on le masque */
+ 
 .location_collapse > div:empty { display: none; }
 
 /* ===== ton style ===== */
@@ -50,11 +50,7 @@
 .collapse-title .arrow.up {
   transform: rotate(180deg); /* “^” */
 }
-/* tes classes restent là si un jour tu veux animer :
-   .arrow.down  -> rotate(0deg)
-   .arrow.up    -> rotate(180deg)  */
-
-/* contenu toujours visible + ombre douce */
+ 
 .collapse-content {
   background-color: #f7f7f7;
   border-radius: 0 0 10px 10px;
