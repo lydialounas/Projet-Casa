@@ -10,5 +10,15 @@ import Collapse from './Collapse';
          
     expect(screen.getByText('Description')).toBeInTheDocument();  //la description est bien là
     fireEvent.click(screen.getByTestId('collapse-title')); // on clique sur la description
-    expect(screen.getByText('Contenu du collapse')).toBeInTheDocument(); // le contenu est bien là après le clic
-  })})
+    expect(screen.getByText('Contenu du collapse')).toBeInTheDocument();  // le contenu est bien là après le clic
+  })
+    test(' tester format tableaux', async () => {
+  
+    render(
+      <Collapse title="Equipements" content={["frigo","four"]} />)
+
+    expect(screen.getByText('Equipements')).toBeInTheDocument();  //la description est bien là
+    fireEvent.click(screen.getByTestId('collapse-title')); // on clique sur la description
+    expect(screen.getByText('frigo')).toBeInTheDocument();  // le contenu est bien là après le clic
+  })
+})
