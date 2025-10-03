@@ -10,7 +10,7 @@
 }
 
 .banner::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.4); /* voile sombre */
@@ -29,7 +29,12 @@
   font-size: 1.8rem;
   font-weight: 500px;
   text-align: center;
+  font-size: 46px;
   z-index: 1;
 }
 
- 
+@media screen and (max-width: 768px) {
+  .banner-text {
+    font-size: 24px;
+  }
+}

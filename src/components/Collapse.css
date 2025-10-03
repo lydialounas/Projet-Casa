@@ -9,8 +9,10 @@
   flex: 1 1 0;
   min-width: 0;
 }
- 
-.location_collapse > div:empty { display: none; }
+
+.location_collapse > div:empty {
+  display: none;
+}
 
 /* ===== ton style ===== */
 .collapse {
@@ -40,17 +42,15 @@
 /* caret centré dans la barre rouge */
 .collapse-title .arrow {
   position: absolute;
-  left: 80%;
-  top: 50%;
-  width: 12px;
-  height: 12px; 
-  transform: translate(-50%, -50%); /* “^” (ouvert) */
+  right: 5%;
+  top: 15%;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 .collapse-title .arrow.up {
   transform: rotate(180deg); /* “^” */
 }
- 
+
 .collapse-content {
   background-color: #f7f7f7;
   border-radius: 0 0 10px 10px;
@@ -69,16 +69,34 @@
 
 /* Petite animation d’ouverture */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-5px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* 📱 Responsive : passe en une colonne */
 @media (max-width: 920px) {
-  .location_collapse { flex-direction: column; gap: 16px; }
+  .location_collapse {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 @media (max-width: 768px) {
-  .collapse-title { font-size: 14px; padding: 12px 16px; }
-  .collapse-content { font-size: 13px; padding: 12px 16px; }
+  .collapse {
+    width: 90%;
+  }
+  .collapse-title {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+  .collapse-content {
+    font-size: 13px;
+    padding: 12px 16px;
+  }
 }
