@@ -1,10 +1,10 @@
 import { Link, useLocation } from "react-router-dom"
 import React from "react";
 import "./Header.css";  
- import logo from "../assets/logo.png"
+ import logo from "../../assets/logo.png"
 export default function Header() {
-  const location = useLocation()
-  const activeLink = location.pathname
+  const location = useLocation()//donne accès à l'URL courante
+  const activeLink = location.pathname//
 
   return (
     <header className="header">

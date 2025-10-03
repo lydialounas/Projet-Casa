@@ -1,6 +1,6 @@
 import { useState } from "react"
-import arrow_next from "../assets/arrow_next_carrousel.png"
-import arrow_back from "../assets/arrow_back_carrousel.png"
+import arrow_next from "../../assets/arrow_next_carrousel.png"
+import arrow_back from "../../assets/arrow_back_carrousel.png"
 import "./Carrousel.css"
 
 

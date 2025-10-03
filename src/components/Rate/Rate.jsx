@@ -1,4 +1,4 @@
-import "../components/Rate.css";
+import "./Rate.css";
 
 export default function Rate({ rate }) {
   const range = [1, 2, 3, 4, 5];

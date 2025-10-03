@@ -1,8 +1,8 @@
 // src/pages/Apropos.jsx
 import React from "react";
-import Banner from "../components/Banner";
-import Collapse from "../components/Collapse";
-import Footer from "../components/Footer";
+import Banner from "../components/Banner/Banner.jsx";
+import Collapse from "../components/Collapse/Collapse.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 import "./Apropos.css";
  
 import bannerApropos from "../assets/banner_2.png";
@@ -14,7 +14,7 @@ export default function Apropos() {
         {/* Bannière */}
         <Banner image={bannerApropos} Image={bannerApropos} />
 
-        {/* Liste des collapses */}
+        {/* Liste des collapses */}   {/* les valeurs de l'en */}
         <div className="apropos_collapse">
           <Collapse
             title="Fiabilité"

@@ -1,9 +1,9 @@
  
 import React from "react";
-import Banner from "../components/Banner";
+import Banner from "../components/Banner/Banner.jsx";
 import "./Accueil.css";
-import GalleryCards from "../components/GalleryCards";
-import Footer from "../components/Footer";
+import GalleryCards from "../components/GalleryCards/GalleryCards.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 
 function Accueil() {
   return (

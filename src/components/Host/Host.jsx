@@ -1,4 +1,4 @@
-import "../components/Host.css"
+import "./Host.css"
 
 export default function Host({ host }) {
   if (!host) return null

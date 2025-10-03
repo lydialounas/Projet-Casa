@@ -1,7 +1,7 @@
 // src/components/Banner.jsx
 import React from "react";
 import "./Banner.css";
-import defaultBanner from "../assets/Image.png";
+import defaultBanner from "../../assets/Image.png";
 
 export default function Banner({ image = defaultBanner, text }) {
   return (

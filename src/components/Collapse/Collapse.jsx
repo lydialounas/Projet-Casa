@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Collapse.css'; // pense à styliser .arrow.up / .arrow.down
-import Arrow from '../assets/arrow_collapse.png';
+import Arrow from '../../assets/arrow_collapse.png';
 
 export default function Collapse({ title, content }) {
   const [open, setOpen] = useState(false);
