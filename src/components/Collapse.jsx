@@ -1,5 +1,6 @@
-import { useState } from "react";
-import "./Collapse.css"; // pense à styliser .arrow.up / .arrow.down
+import { useState } from 'react';
+import './Collapse.css'; // pense à styliser .arrow.up / .arrow.down
+import Arrow from '../assets/arrow_collapse.png';
 
 export default function Collapse({ title, content }) {
   const [open, setOpen] = useState(false);
@@ -14,27 +15,27 @@ export default function Collapse({ title, content }) {
         onClick={toggle}
         role="button"
         tabIndex={0}
-        onKeyDown={(e) => e.key === "Enter" && toggle()}
+        onKeyDown={(e) => e.key === 'Enter' && toggle()}
       >
         <span>{title}</span>
-        <span className={`arrow ${open ? "up" : "down"}`}>⌃</span>
+        <span className={`arrow ${open ? 'up' : 'down'}`}>
+          <img src={Arrow} alt="fleche" />
+        </span>
       </div>
 
       {open && (
         <div className="collapse-content">
-          {Array.isArray(content)
-            ? content.map((item, index) => (
-                <p key={index} className="collapse-text">
-                  {item}
-                </p>
-              ))
-            : typeof content === "string" ? (
-                <p className="collapse-text">{content}</p>
-              ) : null}
-
+          {Array.isArray(content) ? (
+            content.map((item, index) => (
+              <p key={index} className="collapse-text">
+                {item}
+              </p>
+            ))
+          ) : typeof content === 'string' ? (
+            <p className="collapse-text">{content}</p>
+          ) : null}
         </div>
-      )}    
-
+      )}
     </div>
-    );
+  );
 }

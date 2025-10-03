@@ -1,60 +1,61 @@
 .header {
-    display: flex;
-    justify-content: space-between;  /* logo à gauche, liens à droite */
-    align-items: center;             /* alignement vertical */
-    max-width: 100%px;
-    margin: 0 auto;                  /* centre horizontalement */
-    padding: 45px 100px 0px;
-    margin-bottom: 50px;             /* espace sous le header */
+  display: flex;
+  justify-content: space-between; /* logo à gauche, liens à droite */
+  align-items: center; /* alignement vertical */
+  max-width: 100%px;
+  margin: 0 auto; /* centre horizontalement */
+  padding: 45px 100px 0px;
+  margin-bottom: 50px; /* espace sous le header */
 }
 
 .header_nav {
-    flex: 1;                         /* prend tout l'espace restant */
-    justify-content: flex-end;       /* aligne les liens à droite */
-    display: flex;
-    gap: 70px;                       /* espace entre les liens */
-    font-family: 'Montserrat';
+  flex: 1; /* prend tout l'espace restant */
+  justify-content: flex-end; /* aligne les liens à droite */
+  display: flex;
+  gap: 57px; /* espace entre les liens */
+  font-family: 'Montserrat';
 }
 
 .header_link {
-    font-size: 24px;
-    font-weight: 500;
-    color: #000000;
-    text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
 }
 
 /* Classe appliquée dynamiquement au lien actif (souligné) */
 .header_link.underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Responsive design pour tablettes et mobiles */
 @media (max-width: 1024px) {
-    .header_link {
-        font-size: 18px;
-    }
+  .header_link {
+    font-size: 18px;
+  }
 
-    .header img {
-        height: 55px;
-    }
+  .header img {
+    height: 55px;
+  }
 }
 
 @media (max-width: 768px) {
-    .header {
-        padding: 20px 20px 20px;      
-    }
+  .header {
+    padding: 20px 20px 20px;
+  }
 
-    .header_nav {
-        gap: 26px;
-    }
+  .header_nav {
+    gap: 26px;
+  }
 
-    .header_link {
-        font-size: 12px;
-        text-transform: uppercase;
-    }
+  .header_link {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 
-    .header img {
-        width: 145px;
-        height: 47px;
-    }
+  .header img {
+    width: 100px;
+    height: 47px;
+    object-fit: contain;
+  }
 }
